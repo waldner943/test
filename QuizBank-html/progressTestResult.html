@@ -1,0 +1,57 @@
+<!-- <?php
+require_once ("crud/crud_ProgressTest.php");
+$testResults = new TEST;
+$result = $testResults->getCorrectAnswers();
+?> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>progressTestResult</title>
+    <link rel="stylesheet" href="progressTestresult.css">
+</head>
+<body>
+
+    <main>
+        <div class="container-table">
+            <table>
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th>MyAnswer</th>
+                        <th>Result</th>
+                        <th>Meaning</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- <?php
+                        $i = 1;
+                        foreach($result as $row){
+                            echo "<tr>";
+                            echo "<td>No.$i</td>";
+                            echo "<td>" .$row['answer']."</td>";
+                            if($row['answer'] == $row['my_word']){
+                                echo "<td class=''>○</td>";
+                            }else{
+                                echo "<td class=''>".$row['my_word']."</td>";
+                            }
+                            echo "<td>".$row['my_meaning']."</td>";
+                            echo "</tr>";
+                            $i++;
+                        }
+                    ?> -->
+                    <tr class="btn-row">
+                        <td><a href="myQuiz.php">Quit</a></td>
+                        <td></td>
+                        <td></td>
+                        <td><a href="ProgressTest.php" class="">Replay</a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </main>
+    
+</body>
+</html>

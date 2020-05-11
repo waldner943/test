@@ -1,0 +1,44 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+    color: #454445;
+}
+li, a, button{
+    text-decoration: none;
+}
+
+main{
+    background-color: #F9FBFE;
+    padding-top: 48px;
+}
+
+.container-table{
+    margin-left: calc(38vw - 150px);
+}
+.container-table table{
+    padding: 10px 24px;
+    border: 0.5px solid #eaeaea;
+    background-color: #fff;
+}
+
+.btn-row{
+
+}
+.btn-row a,
+.btn-row button{
+    border: 0.5px solid #e0e0e0;
+    border-radius: 5px;
+    color: #fff;
+    letter-spacing: 1px;
+}
+.btn-row a{
+    background-color: #707070;
+    padding: 12px 5.4vw;
+}
+.btn-row button{
+    background-color: #D1AE7C;
+    padding: 8px 5.4vw;
+    font-size: 100%;
+    cursor: pointer;
+}

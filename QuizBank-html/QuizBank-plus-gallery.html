@@ -1,0 +1,166 @@
+<!-- <?php 
+require_once ("crud/crud_myAccount.php");
+if(!$_SESSION['id']){
+  header('location: home.php');
+}
+
+$myAccount = new MYACCOUNT;
+$result = $myAccount->getMyAccount();
+
+?> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QuizBank-plus-gallery</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+    <link rel="stylesheet" href="QuizBank-plus-gallery.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+<body>
+    <header>
+        <div class="header-left">
+            <img src="image/logo-owl.jpg" class="logo">
+            <ul class="nav-links">
+                <li><a href="standard-free.html">Standard Quiz</a></li>
+                <li><a href=""><i class="fas fa-lock"></i>  My Quiz</a></li>
+            </ul>
+
+        </div>
+        <div class="header-right">
+            <ul id="dropmenu" class="dropmenu">
+                <li>
+                    <span>Hello OO <i class="fas fa-sort-down"></i></span>
+                    <ul>
+                        <li><a href="">Profile</a></li>
+                        <li><a href="logout.php">Logout</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <hr>
+
+    <main>
+        <div class="showcase">
+                <h1>" QuizBank Plus "</h1>
+                <br>
+                <h3>Subscribe to Advance ?</h3>
+                <br>
+                <p>300 php / month</p>
+                <br>
+                <div class="register-flex">
+                    <a href="subscription.html" class="subscribe-btn">Go to subscribe page</a>
+                </div>
+        </div>
+        <section class="section-a">
+            <img class="img-a" id="fadeIn-img" src="image/lv3-5.png">
+            <div class="text-content">
+                <div>
+                    <h2>Release LV3, LV4, LV5</h2>
+                    <br>
+                    <p>Playing difficult more, proceed more.</p>
+                </div>
+            </div>
+        </section>
+        <section class="section-b">
+            <div class="text-content">
+                <div>
+                    <h2>Flashcard</h2>
+                    <br>
+                    <p>With the flashcard, you can register only the words you want to focus on and make them your own questions. You can also delete the words you have learned and continue learning only the words that are difficult for you.</p>
+                </div>
+            </div>
+            <img class="img-b" id="fadeIn-img" src="image/flashcard.png">
+        </section>
+        <section class="section-c">
+            <img class="img-c" id="fadeIn-img" src="image/myquiz.png">
+            <div class="text-content">
+                <div>
+                    <h2>Typing Game</h2>
+                    <br>
+                    <p>In this game you compete for how many words you can type within the time limit. You can check the words you do not understand by the hint button one by one.</p>
+                </div>
+            </div>
+        </section>
+        <section class="section-d">
+            <div class="text-content">
+                <div>
+                    <h2>Progress Test</h2>
+                    <br>
+                    <p>Checking your memory as the progress with this test.  </p>
+                </div>
+            </div>
+            <img class="img-d" id="fadeIn-img" src="image/testResult.png">
+        </section>
+
+        <div class="register-flex">
+            <a href="subscription.html" class="subscribe-btn">Go to subscribe page</a>
+        </div>
+
+        <div class="QA">
+            <h1>Q & A</h1>
+            <div class="QA-card">
+                <h4>Do you accept payment methods other than credit cards?</h4>
+                <p>We accept debit and prepaid cards. However, please note that some issuing companies do not support it.</p>
+            </div>
+            <div class="QA-card">
+                <h4>Do you support bank transfer?</h4>
+                <p>We apologize for the inconvenience, but basically we do not support it because the operation is difficult. However, we will only respond if you can use "half-year payment" for "lump-sum payment," so please contact us. When making inquiries, please include the "address of the invoice" and the "desired date of use".</p>
+            </div>
+            <div class="QA-card">
+                <h4>Is the paid plan available for one month from the date of registration? Or is it until the end of the registration month?</h4>
+                <p>You can use it for one month from the registration date. To be more precise, it will be until the same time on the same day of the month following the registration date. If there is no same day in the following month, it will be until the same time on the last day of the following month.</p>
+            </div>
+            <div class="QA-card">
+                <h4>Are paid plans automatically renewed?</h4>
+                <p>Yes. It will be automatically updated after one month. If you want to cancel, please cancel with sufficient time.</p>
+            </div>
+            <div class="QA-card">
+                <h4>Can I issue a receipt for a paid plan?</h4>
+                <p>Only invoices will be issued. You can view your invoice from "Payment Information" in your account settings page. Please print and use it.</p>
+            </div>
+        </div>
+
+    </main>
+    
+    <footer>
+        <div class="footer-logo">
+            <!-- <img src="image/black-owl.jpg" class="logo"> -->
+            <span>QuizBank</span>
+        </div>
+        <div class="footer-flex">
+            <div class="footer-column">
+                <h3>Service</h3>
+                <ul>
+                    <li><a href="">Subscription</a></li>
+                    <li><a href="">Blog</a></li>
+                    <li><a href="">Help</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Support</h3>
+                <ul>
+                    <li><a href="">Company Information</a></li>
+                    <li><a href="">Employment information</a></li>
+                    <li><a href="">Terms</a></li>
+                    <li><a href="">Privacy Plicy</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>SNS</h3>
+                <ul>
+                    <li><a href="">Facebook</a></li>
+                    <li><a href="">Twitter</a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <p>Copyright © Ryuji Ishida All rights reserved.</p>
+    </footer>
+    
+    <script src="QuizBank-plus-gallery.js"></script>
+</body>
+</html>

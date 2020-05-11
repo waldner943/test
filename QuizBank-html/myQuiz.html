@@ -1,0 +1,122 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>myQuiz</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+    <link rel="stylesheet" href="myQuiz.css">
+
+</head>
+<body>
+    <header>
+        <div class="header-left">
+            <img src="image/logo-owl.jpg" class="logo">
+            <ul class="nav-links">
+                <li><a href="standard-plus.html">Standard Quiz</a></li>
+                <li><a href="#">My Quiz</a></li>
+            </ul>
+
+        </div>
+        <div class="header-right">
+            <ul id="dropmenu" class="dropmenu">
+                <li>
+                    <span>Hello OO
+                        <!-- <?php echo $_SESSION['username']; ?> -->
+                        <i class="fas fa-sort-down"></i>
+                    </span>
+                    <ul>
+                        <li><a href="">Profile</a></li>
+                        <li><a href="logout.php">Logout</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <hr>
+
+    <main>
+        <div class="container-card">
+            <div class="card card-left">
+                <div>
+                    <h1><i class="fas fa-pencil-alt"></i>My Quiz&emsp;</h1>
+                    <a href="" class="">Play</a>
+                </div>
+            </div>
+            <div class="card card-right">
+                <div>
+                    <h1><i class="fas fa-feather-alt"></i> Progress Test</h1>
+                    <a href="" class="">Play</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-table">
+
+            <table>
+                <thead class="thead-1">
+                    <tr>
+						<form action="action/action_myQuizzes.php" method="POST" class="">
+							<th>New</th>
+							<th><input type="text" name="myWord" class="form-control" placeholder="(add word)" required></th>
+							<th><input type="text" name="myMeaning" class="form-control" placeholder="(add meaning)" required></th>
+							<th><button type="submit" name="myWordAddRegister" class="btn">Save</button></th>
+						</form>
+                    </tr>
+				</thead>
+
+				
+				<thead class="thead-2">
+					<tr>
+						<form action="action/action_myQuizzes.php" method="POST">
+							<th>
+								<small>No</small>
+								<select name="my_quiz_id" style="width: 100%;">
+									<!-- <?php
+										foreach($result as $row){
+											$my_quiz_id = $row["my_quiz_id"];
+											echo "<option value='$my_quiz_id'>" .$row["my_quiz_id"]. "</option>";
+										}    
+									?> -->
+								</select>
+							</th>
+							<th><input type="text" name="e_myWord" class="form-control" placeholder="(edit word)" required></th>
+							<th><input type="text" name="e_myMeaning" class="form-control" placeholder="(edit meaning)" required></th>
+							<th><button type="submit" name="myWordEditRegister" class="btn">Edit</button></th>
+						</form>
+					</tr>
+				</thead>
+
+				<thead class="thead-3">
+					<tr>
+						<th>No</th>
+						<th>Word</th>
+						<th>Meaning</th>
+						<th></th>
+					</tr>
+				</thead>
+
+				<tbody>
+					<!-- <?php
+						foreach($result as $row){
+							$id = $row['my_quiz_id'];
+							echo "<tr>";
+							echo "<td>". $row['my_quiz_id']. "</td>";
+							echo "<td>". $row['word']. "</td>";
+							echo "<td>". $row['meaning']. "</td>";
+							echo "<td><a href='action/action_myQuizzes.php?actiontype=delete&my_quiz_id=$id' class='btn'> Delete </a></td>";
+							echo "</tr>";
+						}
+					?> -->
+				</tbody>
+            </table>
+
+        </div>
+
+
+    </main>
+    
+</body>
+</html>

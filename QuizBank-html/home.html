@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>home</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+    <link rel="stylesheet" href="home.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+<body>
+    <header>
+        <div class="header-left">
+            <img src="image/logo-owl.jpg" class="logo">
+            <span>QuizBank</span>
+        </div>
+        <nav class="header-right">
+            <ul class="nav-links">
+                <li><a href="">Home</a></li>
+                <li><a href="">Gallery</a></li>
+                <li><a href="">Contact us</a></li>
+                <!-- modal ------------------------------>
+                <a class="login-btn" id="login-show">Login</a>
+            </ul>
+        </nav>
+    </header>
+    <hr>
+
+    <main>
+        <!-- modal -------------------------------------->
+
+        <!-- login -------------------------------------->
+        <div class="login-modal-wrapper" id="login-modal">
+            <div class="modal">
+                <div id="close-login-modal">
+                    <i class="fa fa-2x fa-times"></i>
+                </div>
+                <div id="login-form">
+                    <h2>Login</h2>
+                    <small>By signing in, you agree to our <a href="terms.html" target="new">Terms</a> and <a href="privacyPolicy.html" target="new">Privacy Policy</a>.</small>
+                    <form action="#">
+                        <input class="" type="text" placeholder="E-mail Address">
+                        <input class="" type="password" placeholder="Password">
+                        <i toggle="#password-field" class="password-icon fas fa-eye toggle-password"></i>
+                        <div id="login-submit-btn">Login</div>
+                    </form>
+                    <small><a href="">Click here</a> if you forgot your password.</small>
+                    <small>
+                        <span id="hr-line">------------------------------------------</span>
+                        or log in with
+                        <span id="hr-line">------------------------------------------</span>
+                    </small>
+                    <div class="icon-box">
+                        <div class="bg-google">
+                            <i class="fab fa-google fa-lg"></i>
+                        </div>
+                        <div class="bg-facebook">
+                            <i class="fab fa-facebook-f fa-lg"></i>
+                        </div>
+                        <div class="bg-twitter">
+                            <i class="fab fa-twitter fa-lg"></i>
+                        </div>
+                    </div>
+                    <small>Don't have an account? <a id="shiftToSignup">Sign up</a></small>
+                </div>
+            </div>
+        </div>
+
+        <!-- signup -------------------------------------->
+        <div class="signup-modal-wrapper" id="signup-modal">
+            <div class="modal">
+                <div id="close-signup-modal">
+                    <i class="fa fa-2x fa-times"></i>
+                </div>
+                <div id="signup-form">
+                    <h2>Sign up</h2>
+                    <small>By signing in, you agree to our <a href="terms.html" target="new">Terms</a> and <a href="privacyPloicy.html" target="new">Privacy Policy</a>.</small>
+                    <form action="#">
+                        <input class="" type="text" placeholder="Name">
+                        <input class="" type="text" placeholder="E-mail Address">
+                        <input class="" type="password" placeholder="Password">
+                        <i toggle="#password-field" class="password-icon fas fa-eye toggle-password"></i>
+                        <div id="signup-submit-btn">Sign up</div>
+                    </form>
+                    <small>
+                        <span id="hr-line">------------------------------------------</span>
+                        or sign up with
+                        <span id="hr-line">------------------------------------------</span>
+                    </small>
+                    <div class="icon-box">
+                        <div class="bg-google">
+                            <i class="fab fa-google fa-lg"></i>
+                        </div>
+                        <div class="bg-facebook">
+                            <i class="fab fa-facebook-f fa-lg"></i>
+                        </div>
+                        <div class="bg-twitter">
+                            <i class="fab fa-twitter fa-lg"></i>
+                        </div>
+                    </div>
+                    <small>Already have an account? <a id="shiftToLogin">login</a></small>
+                </div>
+            </div>
+        </div>
+
+        <!-- <i class="fab fa-twitter"></i>
+        <i class="fab fa-facebook-f"></i>
+        <i class="fab fa-google"></i> -->
+
+        <div class="showcase">
+            <h1>Let's learn English with "QuizBank".</h1>
+            <br>
+            <h3>QuizBank is a new type of app specializing in memorizing words.</h3>
+            <br>
+            <div class="images">
+                <img class="top-images image-1" src="image/plant-copy-1.jpg">
+                <img class="top-images image-2" src="image/plant-copy-2.jpg">
+                <img class="top-images image-3" src="image/plant-copy-3.jpg">
+                <img class="top-images image-4" src="image/plant-copy-4.jpg">
+                <img class="top-images image-5" src="image/plant-copy-5.jpg">
+            </div>
+        </div>
+
+        <div class="register-flex">
+            <a class="signup-btn" id="signup-show">Sign up for free</a>
+        </div>
+        <!-- <div class="register-flex">
+            <a class="signup-btn" id="signup-show">Sign up for free</a>
+        </div> -->
+        
+
+        <section class="section-a">
+            <img class="img-a" src="image/typing03.jpeg">
+            <div class="text-content">
+                <div>
+                    <h2>To Memorize while Typing</h2>
+                    <br>
+                    <p>Human memory is associated with movement. The act of typing helps your memory. It also helps to improve typing speed.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-b">
+            <div class="text-content">
+                <div>
+                    <h2>Hides the correct answer before answering.</h2>
+                    <br>
+                    <p>If you can easily understand the answer like a normal word book, it will be difficult to exert appropriate stress on the brain. With this app, you can apply moderate stress to the brain by hiding the correct answer.</p>
+                </div>
+            </div>
+            <img class="img-b" src="image/question03.jpg">
+        </section>
+
+        <section class="section-c">
+            <img class="img-c" src="image/timer02.jpg">
+            <div class="text-content">
+                <div>
+                    <h2>CountDown Timer</h2>
+                    <br>
+                    <p>By setting a time limit, you can grasp the playing time and concentrate on your work.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-d">
+            <div class="text-content">
+                <div>
+                    <h2>My Flashcard</h2>
+                    <br>
+                    <a href="QuizBank-plus-gallery.html">QuizBank Plus</a>
+                    <br><br>
+                    <p>With the flashcard, you can register only the words you want to focus on and make them your own questions. You can also delete the words you have learned and continue learning only the words that are difficult for you.</p>
+                </div>
+            </div>
+            <img class="img-d" src="image/notebook03.jpg">
+        </section>
+
+        <section class="section-e">
+            <img class="img-e" src="image/progress03.jpg">
+            <div class="text-content">
+                <div>
+                    <h2>Can check the accuracy rate in "My Flashcard" you made.</h2>
+                    <br>
+                    <a href="QuizBank-plus-gallery.html">QuizBank Plus</a>
+                    <br><br>
+                    <p>By checking the accuracy rate, you can see the progress you are memorizing the word little by little. If you have already learned the word, you can delete.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-f"></section>
+
+        <div class="register-flex">
+            <a class="signup-btn" id="signup-show">Get started</a>
+        </div>
+
+    </main>
+    <footer>
+        <div class="footer-logo">
+            <!-- <img src="image/black-owl.jpg" class="logo"> -->
+            <span>QuizBank</span>
+        </div>
+        <div class="footer-flex">
+            <div class="footer-column">
+                <h3>Service</h3>
+                <ul>
+                    <li><a href="">Subscription</a></li>
+                    <li><a href="">Blog</a></li>
+                    <li><a href="">Help</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Support</h3>
+                <ul>
+                    <li><a href="">Company Information</a></li>
+                    <li><a href="">Employment information</a></li>
+                    <li><a href="">Terms</a></li>
+                    <li><a href="">Privacy Plicy</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>SNS</h3>
+                <ul>
+                    <li><a href="">Facebook</a></li>
+                    <li><a href="">Twitter</a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <p>Copyright © Ryuji Ishida All rights reserved.</p>
+    </footer>
+
+    <script src="home.js"></script>
+</body>
+</html>

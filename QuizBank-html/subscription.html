@@ -1,0 +1,158 @@
+<!-- <?php 
+require_once ("crud/crud_myAccount.php");
+if(!$_SESSION['id']){
+  header('location: home.php');
+}
+
+$myAccount = new MYACCOUNT;
+$result = $myAccount->getMyAccount();
+?> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>subscription</title>
+    <link rel="stylesheet" href="subscription.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+<body>
+    <header>
+        <div class="header-left">
+            <img src="image/logo-owl.jpg" class="logo">
+            <ul class="nav-links">
+                <li><a href="standard-free.html">Standard Quiz</a></li>
+                <li><a href="QuizBank-plus-gallery.php"><i class="fas fa-lock"></i>  My Quiz</a></li>
+            </ul>
+
+        </div>
+        <div class="header-right">
+            <ul id="dropmenu" class="dropmenu">
+                <li>
+                    <span>Hello OO
+                        <!-- <?php echo $_SESSION['username']; ?>
+                        <?php  
+                            // if($_SESSION['username']){
+                            //   echo $_SESSION['username'];
+                            // }else{
+                            //   echo "Log-in";
+                            // }
+                            // 先生に質問！
+                        ?> -->
+                        <i class="fas fa-sort-down"></i>
+                    </span>
+                    <ul>
+                        <li><a href="">Profile</a></li>
+                        <li><a href="logout.php">Logout</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <hr>
+
+    <main>
+        <div class="container">
+            <h3><i class="far fa-credit-card"></i>&nbsp;&nbsp;Payment Method&emsp;&emsp;<span>300php / month</span></h3>
+            <form method="POST" action="">
+                <label class="radio">
+                    <input type="radio" name="Test" value="r-btn1" id="check-r1" />
+                    <label for="check-r1">Credit Card</label>
+                    <span></span>
+                    <i class="icons">
+                        <i class="fab fa-cc-visa"></i>
+                        <i class="fab fa-cc-amex"></i>
+                        <i class="fab fa-cc-mastercard fa-lg"></i>
+                        <i class="fab fa-cc-diners-club"></i>
+                        <i class="fab fa-cc-jcb"></i>
+                        <i class="fab fa-cc-discover"></i>
+                    </i>
+                </label>
+                
+                <div id="rdobtn1">
+                    <div>
+                        <span>Card Number</span>
+                        <input type="number" placeholder="1234" class="cardnumber" name="cc_number1" oninput="sliceMaxLength(this, 4)">
+                        <input type="number" placeholder="1234" class="cardnumber" name="cc_number2" oninput="sliceMaxLength(this, 4)">
+                        <input type="number" placeholder="1234" class="cardnumber" name="cc_number3" oninput="sliceMaxLength(this, 4)">
+                        <input type="number" placeholder="1234" class="cardnumber" name="cc_number4" oninput="sliceMaxLength(this, 4)">
+                    </div>
+                    <div>
+                        <span>Validated Date</span>
+                        <input type="number" placeholder="month" oninput="sliceMaxLength(this, 2)">
+                        <span>/</span>
+                        <input type="number" placeholder="year" oninput="sliceMaxLength(this, 2)">
+                    </div>
+                    <div>
+                        <span>CVC Code</span>
+                        <input type="number" placeholder="CVC" oninput="sliceMaxLength(this, 3)">
+                    </div>
+                    <div>
+                        <span>Name</span>
+                        <input type="text" placeholder="JOHN SMITH">
+                    </div>
+                </div>
+                
+                <label class="radio">
+                    <input type="radio" name="Test" value="r-btn2" id="check-r2" />
+                    <label for="check-r2">PayPal</label>
+                    <span></span>
+                    <i class="fab fa-cc-paypal"></i>
+                </label>
+    
+                <!-- <div>
+                    <div id="rdobtn2">ラジオボタン２を押した時に表示される内容です。</div>
+                </div> -->
+    
+                <label class="checkboxContainer">
+                    <input type="checkbox" id="check-c" />
+                    <span class="checkmark"></span>
+                    <label for="check-c">I agree with<a href="terms.html" target="new">&nbsp;terms</a>&nbsp;and&nbsp;<a href="privacyPolicy.html" target="new">privacy policy</a> .</label>
+                </label>
+    
+                <button type="submit" class="subscribe-btn" id="submit">Subscribe</button>
+                <!-- <input type="submit" id="submit" value="Subscribe" /> -->
+            </form>
+        </div>
+    </main>
+    
+    <footer>
+        <div class="footer-logo">
+            <!-- <img src="image/black-owl.jpg" class="logo"> -->
+            <span>QuizBank</span>
+        </div>
+        <div class="footer-flex">
+            <div class="footer-column">
+                <h3>Service</h3>
+                <ul>
+                    <li><a href="">Subscription</a></li>
+                    <li><a href="">Blog</a></li>
+                    <li><a href="">Help</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Support</h3>
+                <ul>
+                    <li><a href="">Company Information</a></li>
+                    <li><a href="">Employment information</a></li>
+                    <li><a href="">Terms</a></li>
+                    <li><a href="">Privacy Plicy</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>SNS</h3>
+                <ul>
+                    <li><a href="">Facebook</a></li>
+                    <li><a href="">Twitter</a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <p>Copyright © Ryuji Ishida All rights reserved.</p>
+    </footer>
+
+    <script src="subscription.js"></script>
+</body>
+</html>

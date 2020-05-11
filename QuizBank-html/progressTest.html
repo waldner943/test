@@ -1,0 +1,55 @@
+<!-- <?php
+require_once ("assets/classes/crud_ProgressTest.php");
+$questions = new TEST;
+$result = $questions->getQuestions();
+?> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>progressTest</title>
+    <link rel="stylesheet" href="progressTest.css">
+</head>
+<body>
+
+    <main>
+        <div class="container-table">
+            <table>
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th>Answer</th>
+                        <th>Meaning</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <form action="action_ProgressTest.php" method="POST">
+                        <!-- <?php
+                            $i = 1;
+                            foreach($result as $row){
+                                $id = $row['my_quiz_id'];
+                                echo "<tr>";
+                                echo "<td>No.$i</td>";
+                                echo "<td><input type='text' name='answer[]' class=''>
+                                            <input type='hidden' name='id[]' value='$id'>
+                                    </td>";
+                                echo "<td>".$row['my_meaning']."</td>";
+                                echo "</tr>";
+                                $i++;
+                            }
+                        ?> -->
+                        <tr class="btn-row">
+                            <td><a href="myQuiz.php">Quit</a></td>
+                            <td></td>
+                            <td><button type="submit" name="btnSubmit">Submit</button></td>
+                        </tr>
+                    </form>
+                </tbody>
+            </table>
+        </div>
+    </main>
+    
+</body>
+</html>

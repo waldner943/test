@@ -1,0 +1,232 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+    color: #454445;
+}
+li, a, button{
+    text-decoration: none;
+}
+
+/* header ----------*/
+header{
+    margin: 0 8px;
+    margin-top: -1.5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header-left{
+    display: flex;
+    align-items: center;
+}
+.header-left .logo{
+    width: 48px;
+    height: 48px;
+    cursor: pointer;
+    margin-right: 1vw;
+}
+.nav-links{
+    list-style: none;
+    margin-bottom: 10px;
+}
+.nav-links li{
+    display: inline-block;
+}
+.nav-links li:nth-of-type(1):hover{
+    border-bottom: 3px solid #5dca88;
+    margin-bottom: -3px;
+    transition-duration: 0.2s;
+}
+.nav-links li:nth-of-type(2){
+    opacity: 0.5;
+}
+.nav-links li a{
+    display: inline-block;
+    padding-top: 24px;
+    padding-right: 8px;
+    padding-bottom: 12px;
+    padding-left: 8px;
+    font-weight: bolder;
+}
+
+/* -------------------------- */
+.header-right{
+
+}
+.dropmenu{
+    list-style-type: none;
+}
+.dropmenu:before, .dropmenu:after{
+
+}
+.dropmenu:after{
+    
+}
+.dropmenu li{
+    position: relative;
+}
+.dropmenu li span{
+    padding: 10px 12px;
+    border-radius: 3px;
+    font-size: 90%;
+}
+.dropmenu li ul{
+    list-style: none;
+    position: absolute;
+    z-index: 888;
+    top: 128%;
+}
+.dropmenu li ul li{
+    
+}
+.dropmenu li ul li a{
+    padding: 8px 0px;
+    border-top: 1px solid #707070;
+    background: #fff;
+    text-align: center;
+    display: block;
+    width: 80px;
+    font-size: 90%;
+}
+.dropmenu li ul li a:hover{
+    background: #eaeaea;
+}
+.dropmenu li:hover span{
+    background: #eaeaea;
+}
+.dropmenu li span:hover{
+    
+}
+
+#dropmenu li ul li{
+    overflow: hidden;
+    height: 0;
+    transition: 0.2s;
+}
+#dropmenu li:hover ul li{
+    overflow: visible;
+    height: 39px;
+}
+
+hr{
+    border: 0.5px solid #454445;
+}
+
+/* main ------------------------------*/
+main{
+    background-color: #F9FBFE;
+    padding-top: 48px;
+}
+
+/* ----------------------- */
+.container-card{
+    display: flex;
+    justify-content: center;
+}
+.card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    border:0.5px solid #e0e0e0;
+    border-radius: 8px;
+    width: 40%;
+    height: calc(120px + 12vw);
+}
+.card-left{
+    margin-right: 2vw;
+}
+.card h1{
+    font-size: 4vw;
+    margin-bottom: 4vw;
+}
+.card-left h1{
+    display: flex;
+    justify-content: center;
+}
+.card a{
+    display: flex;
+    justify-content: center;
+    border:0.5px solid #e0e0e0;
+    border-radius: 8px;
+    font-size: 3vw;
+    font-weight: bolder;
+    letter-spacing: 1px;
+    color: #fff;
+}
+.card-left a{
+    padding: 12px 12vw;
+    background-color: #8CE6CE;
+}
+.card-right a{
+    padding: 12px 12vw;
+    background-color: #D1AE7C;
+}
+.container-card{
+    margin-bottom: 20px;
+}
+
+/* table----------------------- */
+.container-table{
+    margin-left: calc(38vw - 150px);
+}
+.container-table table{
+    padding: 10px 24px;
+    border: 0.5px solid #eaeaea;
+    background-color: #fff;
+}
+.thead-1 th:nth-of-type(1){
+    font-size: 92%;
+}
+.thead-2 select{
+    font-size: 92%;
+    margin-bottom: 10px;
+}
+.thead-1 input,
+.thead-2 input{
+    height: 24px;
+    width: 80%;
+    font-size: 80%;
+}
+.thead-1 button,
+.thead-2 button{
+    color: #fff;
+    font-weight: bolder;
+    letter-spacing: 1px;
+    border: 0.5px solid #e0e0e0;
+    border-radius: 5px;
+    outline: none;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+}
+.thead-1 button{
+    background-color: #77DBFD;
+    padding: 6px 5vw;
+    font-size: 90%;
+}
+.thead-2 button{
+    background-color: #8AE9A3;
+    padding: 6px 5.4vw;
+    font-size: 90%;
+}
+.thead-3{
+    background-color: #707070;
+}
+.thead-3 th{
+    color: #fff;
+    font-weight: lighter;
+}
+/* tbody tr{
+    border-bottom: 1px solid #eaeaea;
+} */
+tbody tr:hover{
+    background-color: #eaeaea;
+}
+tbody td{
+    text-align: center;
+}
+
+
